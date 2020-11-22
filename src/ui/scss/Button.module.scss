@@ -1,0 +1,27 @@
+@import 'src/_styles/variables';
+
+.button {
+  width: 128px;
+  height: 32px;
+  background-color: $color-orange-100;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-size: $font-size-md;
+  transition: all 0.2s;
+  outline: none;
+
+  &:active {
+    background-color: $color-orange-200;
+  }
+
+  &:disabled {
+    background-color: $color-orange-200;
+  }
+}
+
+.buttonWrap {
+  margin-top: $space-size-lg;
+  text-align: right;
+}

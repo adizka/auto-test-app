@@ -1,0 +1,16 @@
+@import 'src/_styles/variables';
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  color: $color-orange-100;
+  margin: 0 $space-size-md;
+}
+
+.info {
+  width: 120px;
+  margin: 0 $space-size-md;
+}

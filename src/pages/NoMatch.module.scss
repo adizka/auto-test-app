@@ -1,0 +1,18 @@
+@import "src/_styles/variables";
+
+.noMatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 160px);
+
+  &>* {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: $font-size-xl;
+  }
+}

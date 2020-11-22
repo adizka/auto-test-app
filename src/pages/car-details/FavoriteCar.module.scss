@@ -1,0 +1,25 @@
+@import 'src/_styles/variables';
+
+.favoriteCarWrapper {
+  width: 250px;
+}
+
+.favoriteCar {
+  border: 1px solid $color-orange-100;
+  padding: $space-size-lg;
+  height: auto;
+}
+
+.nonFavoriteCar {
+  border: 1px solid $color-grey;
+}
+
+.favoriteCarInfo {
+  color: $color-dark;
+  font-size: $font-size-md;
+  line-height: 1.5rem;
+}
+
+.favoriteCarButton {
+  background-color: $color-dark;
+}

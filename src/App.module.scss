@@ -1,0 +1,12 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import './_styles/variables';
+@import './_styles/reset';
+
+.wrapper {
+  min-height: 100%;
+
+  main {
+    padding-bottom: 80px;
+  }
+}

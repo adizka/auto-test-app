@@ -1,0 +1,25 @@
+@import 'src/_styles/variables';
+
+.carsListWrapper {
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+  margin: $space-size-lg;
+}
+
+.carListTitle {
+  font-size: $font-size-lg;
+  margin-bottom: $space-size-md;
+}
+
+.paginationDescription {
+  font-size: $font-size-lg;
+  margin-bottom: $space-size-md;
+}
+
+@media screen and(max-width: 767px) {
+  .carsListWrapper {
+    flex-grow: 0;
+    flex-basis: 100%;
+  }
+}

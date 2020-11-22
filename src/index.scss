@@ -1,0 +1,27 @@
+@import './_styles/variables';
+
+// base setup
+html,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  color: $color-dark;
+
+  & > div:first-child {
+    height: 100%;
+  }
+}
+
+a {
+  color: $color-orange-100;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

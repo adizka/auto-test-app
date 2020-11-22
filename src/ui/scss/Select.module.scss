@@ -1,0 +1,64 @@
+@import 'src/_styles/variables';
+
+.select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $space-size-md;
+}
+
+.selectLabel {
+  margin-bottom: $space-size-sm;
+}
+
+.selectToggler {
+  border: 1px solid $color-grey;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.selectTogglerInput {
+  height: 42px;
+  padding: $space-size-sm;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: default;
+}
+
+.selectTogglerButton {
+  outline: none;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectArrow {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  cursor: pointer;
+}
+
+.selectArrowClose {
+  border-top: 8px solid $color-grey;
+}
+
+.selectArrowOpen {
+  border-bottom: 8px solid $color-grey;
+}
+
+.selectMenu {
+  position: absolute;
+  top: 74px;
+  width: 100%;
+  border-top: 1px solid $color-grey;
+  border-right: 1px solid $color-grey;
+  border-left: 1px solid $color-grey;
+  background-color: white;
+  z-index: 2;
+}

@@ -1,0 +1,44 @@
+@import 'src/_styles/variables';
+
+.splashScreen {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $color-grey;
+  padding: $space-size-sm;
+  align-items: center;
+}
+
+.splashScreenImage {
+  width: 100px;
+  height: 80px;
+  flex-shrink: 0;
+
+  background-color: $color-grey;
+}
+
+.splashScreenInfo {
+  margin: 0 $space-size-lg;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.splashScreenLine {
+  width: 60%;
+  height: 15px;
+  background-color: $color-grey;
+  margin-bottom: $space-size-sm;
+}
+
+.splashScreenTitle {
+  height: 25px;
+}
+
+.splashScreenDetails {
+  margin-top: $space-size-sm;
+  margin-bottom: 0;
+  width: 20%;
+}

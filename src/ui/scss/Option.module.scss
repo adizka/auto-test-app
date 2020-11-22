@@ -1,0 +1,18 @@
+@import 'src/_styles/variables';
+
+.option {
+  padding: $space-size-sm;
+  border-bottom: 1px solid $color-grey;
+  cursor: pointer;
+  transition: all 0.1s;
+
+  &:hover {
+    color: white;
+    background-color: $color-orange-100;
+  }
+}
+
+.selected {
+  color: white;
+  background-color: $color-orange-100;
+}

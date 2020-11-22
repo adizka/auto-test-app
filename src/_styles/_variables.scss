@@ -1,0 +1,18 @@
+// typography
+$font-size-base: 1rem !default;
+$font-size-xl: $font-size-base * 2; // 32px
+$font-size-lg: $font-size-base * 1.125; // 18px
+$font-size-md: $font-size-base * .875; // 14px
+$font-size-sm: $font-size-base * 0.75; // 12px 
+
+// margins and paddings
+$space-size-base: 1rem !default;
+$space-size-sm: $space-size-base * .5;
+$space-size-md: $space-size-base;
+$space-size-lg: $space-size-base * 2;
+
+// theme colors
+$color-orange-100: #ea7f28;
+$color-orange-200: #d37324;
+$color-dark: #4a4a4a;
+$color-grey: #ededed;

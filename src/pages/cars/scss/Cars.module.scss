@@ -1,0 +1,9 @@
+.cars {
+  display: flex;
+}
+
+@media screen and(max-width: 767px) {
+  .cars {
+    flex-wrap: wrap;
+  }
+}
