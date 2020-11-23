@@ -1,21 +1,25 @@
-import React from 'react'
-import cl from 'clsx'
-import { useFavorites } from 'src/hooks/useFavorites'
-import { Button } from 'src/ui/Button'
-import styles from './FavoriteCar.module.scss'
+import React from "react";
+import cl from "clsx";
+import { useFavorites } from "src/hooks/useFavorites";
+import { Button } from "src/ui/Button";
+import styles from "./FavoriteCar.module.scss";
 
 type Props = {
-  id: number
-}
+  id: number;
+};
 
 const FavoriteCar: React.FC<Props> = ({ id }) => {
-  const { isFavoriteItem, setFavoriteItem, removeFavoriteItem } = useFavorites()
+  const {
+    isFavoriteItem,
+    setFavoriteItem,
+    removeFavoriteItem,
+  } = useFavorites();
 
-  const isFavorite = isFavoriteItem(id)
+  const isFavorite = isFavoriteItem(id);
 
   return (
     <div className={styles.favoriteCarWrapper}>
-      {isFavorite && (
+      {isFavorite ? (
         <div className={styles.favoriteCar}>
           <p className={styles.favoriteCarInfo}>
             <span>
@@ -32,9 +36,7 @@ const FavoriteCar: React.FC<Props> = ({ id }) => {
             Remove
           </Button>
         </div>
-      )}
-
-      {!isFavorite && (
+      ) : (
         <div className={cl(styles.favoriteCar, styles.nonFavoriteCar)}>
           <p className={styles.favoriteCarInfo}>
             <span>
@@ -49,7 +51,7 @@ const FavoriteCar: React.FC<Props> = ({ id }) => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export { FavoriteCar }
+export { FavoriteCar };
